@@ -29,8 +29,8 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- preload image  -->
-    <link rel="preload" as="image" href="./assets/images/hero-banner.png">
-    <link rel="preload" as="image" href="./assets/images/preloader.svg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link rel="preload" as="image" href="./assets/images/preloader.svg" />
   </head>
   <body>
     <!-- #PRELOADER  -->
@@ -112,8 +112,6 @@
           style="background-image: url('./assets/images/hero-bg.jpg')"
         >
           <div class="container">
-
-
             <div class="hero-content">
               <p class="hero-subtitle">
                 Explore the World
@@ -136,12 +134,21 @@
               <div class="wrapper">
                 <a href="#" class="btn btn-secondary">
                   <span class="span">Plan a Trip</span>
-                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                  <ion-icon
+                    name="chevron-forward"
+                    aria-hidden="true"
+                  ></ion-icon>
                 </a>
 
                 <button class="hero-btn">
                   <div class="btn-img">
-                    <img src="./assets/images/hero-button-img.jpg" width="100" height="100" alt="out story" class="img-cover">
+                    <img
+                      src="./assets/images/hero-button-img.jpg"
+                      width="100"
+                      height="100"
+                      alt="out story"
+                      class="img-cover"
+                    />
                     <ion-icon name="play" aria-hidden="true"></ion-icon>
                   </div>
 
@@ -151,10 +158,126 @@
             </div>
 
             <figure class="hero-banner">
-              <img src="./assets/images/hero-banner.png" width="631" height="735" alt="hero banner" class="w-100">
+              <img
+                src="./assets/images/hero-banner.png"
+                width="631"
+                height="735"
+                alt="hero banner"
+                class="w-100"
+              />
             </figure>
+          </div>
+        </section>
 
+        <!-- #SERVICE  -->
+        <section class="section service" aria-label="service">
+          <div class="container">
+            <div class="title-wrapper">
+              <p class="section-subtitle">What We Serve</p>
+              <h2 class="h2 title section-title">Top Values For You</h2>
+              <p class="section-text">
+                Try a variety of benefits when using our services.
+              </p>
+            </div>
 
+            <div class="service-card">
+              <div class="card-icon">
+                <img
+                  src="./assets/images/service-icon-1.svg"
+                  width="60"
+                  height="60"
+                  loading="lazy"
+                  alt="icon"
+                />
+
+                <h3 class="h3 title cart-title">Lot of Choices</h3>
+                <p class="card-text">
+                  Total 460+ destinations that we work with.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="card-icon">
+                <img
+                  src="./assets/images/service-icon-2.svg"
+                  width="60"
+                  height="60"
+                  loading="lazy"
+                  alt="icon"
+                />
+
+                <h3 class="h3 title cart-title">Best Tour Guide</h3>
+                <p class="card-text">
+                  Our tour guide with 15+ years of experience.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="card-icon">
+                <img
+                  src="./assets/images/service-icon-3.svg"
+                  width="60"
+                  height="60"
+                  loading="lazy"
+                  alt="icon"
+                />
+
+                <h3 class="h3 title cart-title">Easy Booking</h3>
+                <p class="card-text">
+                  With an easy and fast ticket purchase process.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- DESTINATION  -->
+        <section class="section desti" aria-label="destinations">
+          <div class="container">
+            <p class="section-subtitle">Top destination</p>
+
+            <h2 class="h2 title section-title">Explore Top Destination</h2>
+
+            <ul class="desti-list">
+              <li>
+                <div class="desti-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 650"
+                  >
+                    <img
+                      src="assets/images/destination-1.jpg"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      class="img-cover"
+                      alt="Enjoy the Beauty of the del Pincio"
+                    />
+
+                    <span class="card-price">
+                      $340
+                    </span>
+                  </div>
+
+                 <div class="card-content">
+                  <h3 class="h3 title">
+                    <a href="#" class="card-title">Enjoy the Beauty of the del Pincio</a>
+                  </h3>
+
+                  <address class="card-text">
+                    Rome, Italy
+                  </address>
+                  <div class="card-rating">
+                    <span class="span">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </span>
+                  </div>
+                 </div> 
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
       </article>
@@ -170,7 +293,7 @@
     ></script>
     <script
       nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" 
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
   </body>
 </html>
