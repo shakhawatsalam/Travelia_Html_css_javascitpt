@@ -727,8 +727,11 @@ body.nav-active{
 .cta .btn {
   margin-inline: auto;
   margin-block-start: 20px;
-  padding: 30px;
+  padding: 30px; 
+}
 
+.gallery-item:is(:hover, :focus-within) .img-cover {
+  transform: scale(1.05);
 }
 
 /*-----------------------------------*\
