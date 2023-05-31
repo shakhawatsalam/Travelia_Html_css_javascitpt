@@ -40,3 +40,29 @@ window.addEventListener('scroll', function () {
 })
 
 
+
+
+// LLLLLLLLL
+
+// Save scroll position
+function saveScrollPosition() {
+    localStorage.setItem('scrollPosition', window.scrollY);
+}
+
+// Restore scroll position
+function restoreScrollPosition() {
+    const scrollPosition = localStorage.getItem('scrollPosition');
+    window.scrollTo(0, scrollPosition);
+    localStorage.removeItem('scrollPosition');
+}
+
+// Event listener for before page reload
+window.addEventListener('beforeunload', saveScrollPosition);
+
+// Event listener for after page reload
+window.addEventListener('load', restoreScrollPosition);
+
+
+
+
+
